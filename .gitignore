@@ -1,2 +1,8 @@
 .DS_store
 test/
+info/
+zanryu.html
+*.pyc
+__pycache__/
+*.pdf
+print.py

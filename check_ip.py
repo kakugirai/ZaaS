@@ -9,4 +9,3 @@ def check_ip(my_net):
             else:
                 continue
     return False
-
