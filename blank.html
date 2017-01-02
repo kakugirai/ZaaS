@@ -1,177 +1,686 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <style>
-  </style>
-  <meta charset="utf-8"/>
-  <title>
-   夜間残留申請
-  </title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
- </head>
- <body>
-  <div class="title ja">
-   夜間残留申請
-  </div>
-  <div class="title en">
-   Application for Overnight Study at School(Yakan Zanryu)
-  </div>
-  <table class="tg">
-   <tr>
-    <td class="shadow">
-     <span class="ja">
-      年月日
-     </span>
-     <br/>
-     Date
-    </td>
-    <td class="" colspan="5">
-     <span id="year">
-     </span>
-     年
-     <span id="month">
-     </span>
-     月
-     <span id="day">
-     </span>
-     日 (
-     <span id="weekday">
-      月
-     </span>
-     )
-    </td>
-   </tr>
-   <tr>
-    <td class="shadow">
-     <span class="ja">
-      学籍番号
-     </span>
-     <br/>
-     Student ID
-    </td>
-    <td class="">
-     <span id="student-id">
-     </span>
-    </td>
-    <td class="shadow">
-     <span class="ja">
-      学部/研究科
-     </span>
-     <br/>
-     Faculty/Graduate School
-    </td>
-    <td class="">
-     <span id="gakubu">
-     </span>
-    </td>
-    <td class="shadow">
-     <span class="ja">
-      学年
-     </span>
-     <br/>
-     Year
-    </td>
-    <td class="">
-     <span id="gakunen">
-     </span>
-    </td>
-   </tr>
-   <tr>
-    <td class="shadow">
-     <span class="ja">
-      氏名
-     </span>
-     <br/>
-     Name
-    </td>
-    <td class="" colspan="5">
-     <span id="student-name">
-     </span>
-    </td>
-   </tr>
-   <tr>
-    <td class="shadow">
-     <span class="ja">
-      授業科目名
-     </span>
-     <br/>
-     Name of the Course
-    </td>
-    <td class="" colspan="5">
-     <span id="class-name">
-     </span>
-    </td>
-   </tr>
-   <tr>
-    <td class="shadow">
-     <span class="ja">
-      担当教員名
-     </span>
-     <br/>
-     Faculty Member in Charge
-    </td>
-    <td class="" colspan="5">
-     <span id="teacher-name">
-     </span>
-    </td>
-   </tr>
-   <tr>
-    <td class="shadow">
-     <span class="ja">
-      残留設施
-     </span>
-     <br/>
-     Facility where you will study Overnight
-    </td>
-    <td class="" colspan="5">
-     <span id="location">
-     </span>
-    </td>
-   </tr>
-   <tr>
-    <td class="shadow" rowspan="2">
-     <span class="ja">
-      緊急連絡先
-     </span>
-     <br/>
-     Emergency Contact
-    </td>
-    <td class="">
-     <span class="ja">
-      氏名
-     </span>
-     <br/>
-     Name
-    </td>
-    <td class="">
-     <span id="parent-name">
-     </span>
-    </td>
-    <td class="" colspan="2">
-     <span class="ja">
-      学生との関係
-     </span>
-     <br/>
-     Relationship to the student
-    </td>
-    <td class="">
-     <span id="relation">
-     </span>
-    </td>
-   </tr>
-   <tr>
-    <td class="">
-     <span class="ja">
-      電話番号
-     </span>
-     <br/>
-     Telephone Number
-    </td>
-    <td class="" colspan="4">
-     <span id="tele">
-     </span>
-    </td>
-   </tr>
-  </table>
- </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>夜間残留申請</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="book">
+      <div class="page">
+        <div class="row">
+          <div class="col-1-2">
+            <div class="title ja">
+              夜間残留申請
+            </div>
+            <div class="title en">
+              Application for Overnight Study at School(Yakan Zanryu)
+            </div>
+            <table class="tg">
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    年月日
+                  </span>
+                  <br/>
+                  Date
+                </td>
+                <td class="" colspan="5">
+                  <span class="kanji">
+                    <span id="year">
+                    </span>
+                    年
+                    <span id="month">
+                    </span>
+                    月
+                    <span id="day">
+                    </span>
+                    日 (
+                    <span id="weekday">
+                      月
+                    </span>
+                    )
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    学籍番号
+                  </span>
+                  <br/>
+                  Student ID
+                </td>
+                <td class="">
+                  <span id="student-id" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学部/研究科
+                  </span>
+                  <br/>
+                  Faculty/Graduate School
+                </td>
+                <td class="">
+                  <span id="gakubu" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学年
+                  </span>
+                  <br/>
+                  Year
+                </td>
+                <td class="">
+                  <span id="gakunen" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="" colspan="5">
+                  <span id="student-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    授業科目名
+                  </span>
+                  <br/>
+                  Name of the Course
+                </td>
+                <td class="" colspan="5">
+                  <span id="class-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    担当教員名
+                  </span>
+                  <br/>
+                  Faculty Member in Charge
+                </td>
+                <td class="" colspan="5">
+                  <span id="teacher-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    残留設施
+                  </span>
+                  <br/>
+                  Facility where you will study Overnight
+                </td>
+                <td class="" colspan="5">
+                  <span id="location" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow" rowspan="2">
+                  <span class="kanji">
+                    緊急連絡先
+                  </span>
+                  <br/>
+                  Emergency Contact
+                </td>
+                <td class="">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="">
+                  <span id="parent-name" class="kanji">
+                  </span>
+                </td>
+                <td class="" colspan="2">
+                  <span class="kanji">
+                    学生との関係
+                  </span>
+                  <br/>
+                  Relationship to the student
+                </td>
+                <td class="">
+                  <span id="relation" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="">
+                  <span class="kanji">
+                    電話番号
+                  </span>
+                  <br/>
+                  Telephone Number
+                </td>
+                <td class="" colspan="4">
+                  <span id="tele" class="kanji">
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-1-2">
+            <div class="title ja">
+              夜間残留申請
+            </div>
+            <div class="title en">
+              Application for Overnight Study at School(Yakan Zanryu)
+            </div>
+            <table class="tg">
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    年月日
+                  </span>
+                  <br/>
+                  Date
+                </td>
+                <td class="" colspan="5">
+                  <span class="kanji">
+                    <span id="year">
+                    </span>
+                    年
+                    <span id="month">
+                    </span>
+                    月
+                    <span id="day">
+                    </span>
+                    日 (
+                    <span id="weekday">
+                      月
+                    </span>
+                    )
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    学籍番号
+                  </span>
+                  <br/>
+                  Student ID
+                </td>
+                <td class="">
+                  <span id="student-id" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学部/研究科
+                  </span>
+                  <br/>
+                  Faculty/Graduate School
+                </td>
+                <td class="">
+                  <span id="gakubu" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学年
+                  </span>
+                  <br/>
+                  Year
+                </td>
+                <td class="">
+                  <span id="gakunen" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="" colspan="5">
+                  <span id="student-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    授業科目名
+                  </span>
+                  <br/>
+                  Name of the Course
+                </td>
+                <td class="" colspan="5">
+                  <span id="class-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    担当教員名
+                  </span>
+                  <br/>
+                  Faculty Member in Charge
+                </td>
+                <td class="" colspan="5">
+                  <span id="teacher-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    残留設施
+                  </span>
+                  <br/>
+                  Facility where you will study Overnight
+                </td>
+                <td class="" colspan="5">
+                  <span id="location" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow" rowspan="2">
+                  <span class="kanji">
+                    緊急連絡先
+                  </span>
+                  <br/>
+                  Emergency Contact
+                </td>
+                <td class="">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="">
+                  <span id="parent-name" class="kanji">
+                  </span>
+                </td>
+                <td class="" colspan="2">
+                  <span class="kanji">
+                    学生との関係
+                  </span>
+                  <br/>
+                  Relationship to the student
+                </td>
+                <td class="">
+                  <span id="relation" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="">
+                  <span class="kanji">
+                    電話番号
+                  </span>
+                  <br/>
+                  Telephone Number
+                </td>
+                <td class="" colspan="4">
+                  <span id="tele" class="kanji">
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1-2">
+            <div class="title ja">
+              夜間残留申請
+            </div>
+            <div class="title en">
+              Application for Overnight Study at School(Yakan Zanryu)
+            </div>
+            <table class="tg">
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    年月日
+                  </span>
+                  <br/>
+                  Date
+                </td>
+                <td class="" colspan="5">
+                  <span class="kanji">
+                    <span id="year">
+                    </span>
+                    年
+                    <span id="month">
+                    </span>
+                    月
+                    <span id="day">
+                    </span>
+                    日 (
+                    <span id="weekday">
+                      月
+                    </span>
+                    )
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    学籍番号
+                  </span>
+                  <br/>
+                  Student ID
+                </td>
+                <td class="">
+                  <span id="student-id" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学部/研究科
+                  </span>
+                  <br/>
+                  Faculty/Graduate School
+                </td>
+                <td class="">
+                  <span id="gakubu" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学年
+                  </span>
+                  <br/>
+                  Year
+                </td>
+                <td class="">
+                  <span id="gakunen" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="" colspan="5">
+                  <span id="student-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    授業科目名
+                  </span>
+                  <br/>
+                  Name of the Course
+                </td>
+                <td class="" colspan="5">
+                  <span id="class-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    担当教員名
+                  </span>
+                  <br/>
+                  Faculty Member in Charge
+                </td>
+                <td class="" colspan="5">
+                  <span id="teacher-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    残留設施
+                  </span>
+                  <br/>
+                  Facility where you will study Overnight
+                </td>
+                <td class="" colspan="5">
+                  <span id="location" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow" rowspan="2">
+                  <span class="kanji">
+                    緊急連絡先
+                  </span>
+                  <br/>
+                  Emergency Contact
+                </td>
+                <td class="">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="">
+                  <span id="parent-name" class="kanji">
+                  </span>
+                </td>
+                <td class="" colspan="2">
+                  <span class="kanji">
+                    学生との関係
+                  </span>
+                  <br/>
+                  Relationship to the student
+                </td>
+                <td class="">
+                  <span id="relation" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="">
+                  <span class="kanji">
+                    電話番号
+                  </span>
+                  <br/>
+                  Telephone Number
+                </td>
+                <td class="" colspan="4">
+                  <span id="tele" class="kanji">
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-1-2">
+            <div class="title ja">
+              夜間残留申請
+            </div>
+            <div class="title en">
+              Application for Overnight Study at School(Yakan Zanryu)
+            </div>
+            <table class="tg">
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    年月日
+                  </span>
+                  <br/>
+                  Date
+                </td>
+                <td class="" colspan="5">
+                  <span class="kanji">
+                    <span id="year">
+                    </span>
+                    年
+                    <span id="month">
+                    </span>
+                    月
+                    <span id="day">
+                    </span>
+                    日 (
+                    <span id="weekday">
+                      月
+                    </span>
+                    )
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    学籍番号
+                  </span>
+                  <br/>
+                  Student ID
+                </td>
+                <td class="">
+                  <span id="student-id" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学部/研究科
+                  </span>
+                  <br/>
+                  Faculty/Graduate School
+                </td>
+                <td class="">
+                  <span id="gakubu" class="kanji">
+                  </span>
+                </td>
+                <td class="shadow">
+                  <span class="kanji">
+                    学年
+                  </span>
+                  <br/>
+                  Year
+                </td>
+                <td class="">
+                  <span id="gakunen" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="" colspan="5">
+                  <span id="student-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    授業科目名
+                  </span>
+                  <br/>
+                  Name of the Course
+                </td>
+                <td class="" colspan="5">
+                  <span id="class-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    担当教員名
+                  </span>
+                  <br/>
+                  Faculty Member in Charge
+                </td>
+                <td class="" colspan="5">
+                  <span id="teacher-name" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow">
+                  <span class="kanji">
+                    残留設施
+                  </span>
+                  <br/>
+                  Facility where you will study Overnight
+                </td>
+                <td class="" colspan="5">
+                  <span id="location" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="shadow" rowspan="2">
+                  <span class="kanji">
+                    緊急連絡先
+                  </span>
+                  <br/>
+                  Emergency Contact
+                </td>
+                <td class="">
+                  <span class="kanji">
+                    氏名
+                  </span>
+                  <br/>
+                  Name
+                </td>
+                <td class="">
+                  <span id="parent-name" class="kanji">
+                  </span>
+                </td>
+                <td class="" colspan="2">
+                  <span class="kanji">
+                    学生との関係
+                  </span>
+                  <br/>
+                  Relationship to the student
+                </td>
+                <td class="">
+                  <span id="relation" class="kanji">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="">
+                  <span class="kanji">
+                    電話番号
+                  </span>
+                  <br/>
+                  Telephone Number
+                </td>
+                <td class="" colspan="4">
+                  <span id="tele" class="kanji">
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

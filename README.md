@@ -28,3 +28,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+## TODOs
+- [ ] Rewrite HTML with a model engine(EJS? Pug?)
+- [ ] Decrease dependencies

@@ -1,36 +1,96 @@
-  body {
-    height: 842px;
-    width: 595px;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/** {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}*/
+
+/*.page {
+  width: 297mm;
+  min-height: 210mm;
+  padding: 5mm;
+  margin: 10mm auto;
+  background: white;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  @page {
+    size: landscape;
   }
-  .ja {
-    font-family: 'Hiragino Mincho ProN';
+  html, body {
+    height: 210mm;
+    width: 297mm;        
   }
-  .en {
-    font-family:Arial, sans-serif;
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
   }
-  .title {
-    text-align: center;
-    font-size:18px;
-    margin-bottom:3px;
-  }
-  .tg  {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse:collapse;
-    border-spacing:0;
-  }
-  .tg td{
-    font-family:Arial, sans-serif;
-    font-size:9px;
-    padding:3px 3px;
-    border-style:solid;
-    border-width:1px;
-    overflow:hidden;
-    word-break:normal;
-    white-space: nowrap;
-  }
-  .shadow{
-    background:rgba(0,0,0,0.1);
-  }
+}
+*/
+
+/* grid */
+.row {
+  margin: 0 -10px;
+  margin-bottom: 10px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.row:last-child {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding: 10px;
+  display: table-cell;
+}
+
+.ja {
+  font-family: 'Hiragino Mincho ProN';
+}
+.en {
+  font-family:Arial, sans-serif;
+}
+.title {
+  text-align: center;
+  font-size:18px;
+  margin-bottom:3px;
+}
+.tg  {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:9px;
+  padding:2px 3px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  white-space: nowrap;
+}
+.kanji {
+  font-size:13px;
+}
+.shadow{
+  background:rgba(0,0,0,0.1);
+}

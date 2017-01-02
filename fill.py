@@ -34,9 +34,10 @@ def fill_html(html_file, json_file):
         soup = BeautifulSoup(htmlFile.read(), 'lxml')
     with open(json_file, "r", encoding="utf-8") as jsonFile:
         data = json.load(jsonFile)
-    for key, value in data.items():
-        id = soup.find(attrs={"id": key})
-        id.string = str(value)
+    for row in soup.find_all(attrs={"class": "col-1-2"}):
+        for key, value in data.items():
+            id = row.find(attrs={"id": key})
+            id.string = str(value)
     html = soup.prettify()
     with open("zanryu.html", "w+", encoding="utf-8") as htmlFile:
         htmlFile.write(html)
