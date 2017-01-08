@@ -1,9 +1,4 @@
 .DS_store
-test/
-info/
-zanryu.html
-*.pdf
-print.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
