@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name="zanryu",
+    name="ZaaS-client",
     version="0.0.1",
-    description="A CLI tool to register Zanryu in Delta",
-    url="https://github.com/kakugirai/zanryu",
+    description="A CLI tool to help you register Zanryu in Delta",
+    url="https://github.com/kakugirai/ZaaS",
     author="Girai Kaku",
     author_email="kakugirai@gmail.com",
     license="MIT",

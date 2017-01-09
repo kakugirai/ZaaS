@@ -48,7 +48,7 @@ This repo contains both ZaaS client and server.
 
 ```
 git clone https://github.com/kakugirai/ZaaS.git
-cd ZaaS/zanryu-client
+cd ZaaS/ZaaS-client
 python setup.py install
 ```
 
@@ -65,7 +65,7 @@ then
 
 ```
 git clone https://github.com/kakugirai/ZaaS.git
-cd ZaaS/zanryu-server
+cd ZaaS/ZaaS-server
 pip install -r requirements.txt
 ```
 
