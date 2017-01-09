@@ -1,33 +1,81 @@
-# zanryu
-Fill in Zanryu card? NO MORE!
+# ZaaS
+残留 as a Service. Fill in zanryu card? NO MORE!
+
+## Introduction
+
+By using ZaaS, the only thing you need to do when you want to 残留 in Delta is to:
+
+```
+ssh cpu
+zanryu
+```
+
+That's all!
+
+Wait a minute? What happened?
+
+You just post a zanryu request to ZaaS server, which is actually also running on CPU (no external traffic, it's secure!). The server will handle all the dirty jobs for you and finally print out all the zanryu card at around 1:00 am!
+
+By default, `zanryu` command will search for a `.zanryu.json` file in your `$HOME`, which should look like this:
+
+```
+{
+    "student-id": "716123123",
+    "gakubu": "環",
+    "gakunen": "1",
+    "student-name": "慶応　太郎",
+    "class-name": "研究会",
+    "teacher-name": "村井　純",
+    "location": "デルタ館 N205",
+    "parent-name": "慶応　花子",
+    "relation": "母",
+    "tele": "080 5666 6666"
+}
+```
+
+so just simply create your own `.zanryu.json` in your `$HOME`, or you can also specify which file you would like to use if you prefer.
+
+```
+zanryu new_zanryu.json
+```
+
+run`zanryu --help`for more information.
 
 ## Installation
+This repo contains both ZaaS client and server.
+
+### Install ZaaS client on CPU
+
+```
+git clone https://github.com/kakugirai/ZaaS.git
+cd ZaaS/zanryu-client
+python setup.py install
+```
+
+### Install ZaaS server
+Please note that I've already deployed a ZaaS server on CPU, so run it on your own machine if you want to have a try!
+
+First, install the PDF generator
 
 ```
 brew install wkhtmltopdf
 ```
+
+then
+
 ```
-pip3 install -r requirements.txt
+git clone https://github.com/kakugirai/ZaaS.git
+cd ZaaS/zanryu-server
+pip install -r requirements.txt
 ```
 
-## Usage
-It's a simple tool that can help you print out zanryu card when you are ZANRYUing in Delta. You can simply write a bash/python script to automate the process and let crontab helps you check your status everyday.
+start the server
 
-``` python
-import subprocess
-import fill
-from check_ip import check_ip
-
-def main():
-    if check_ip("192.168.1.1/24"):
-        fill.fill_date("info.json")
-        fill.fill_html("blank.html", "info.json")
-        subprocess.call(['wkhtmltopdf', 'zanryu.html', 'zanryu.pdf'])
-        subprocess.call(['lpr', '-P', name_of_the_printer, '-o', 'media="a4"', 'zanryu.pdf'])
-
-if __name__ == '__main__':
-    main()
 ```
+python app.py
+```
+
 ## TODOs
-- [ ] Rewrite HTML with a model engine(EJS? Pug?)
+- [ ] <STRIKE>Rewrite HTML with a model engine(EJS? Pug?)</STRIKE>
 - [ ] Decrease dependencies
+- [ ] Python2 support on ZaaS server
