@@ -14,10 +14,10 @@ URL = "http://127.0.0.1:5000/zanryu"
 @click.argument('config', default=os.path.join(os.path.expanduser('~'), '.zanryu.json'))
 def cli(config):
     """ZaaS: Zanryu as a Service"""
-    i = date.today()
-    weekdays = ["月", "火", "水", "木", "金", "土", "日"]
     with open(config, "r") as file:
         data = json.load(file)
+    weekdays = ["月", "火", "水", "木", "金", "土", "日"]
+    i = date.today()
     data["login_name"] = os.getlogin()
     data["year"] = i.year
     data["month"] = i.month

@@ -14,7 +14,7 @@ That's all!
 
 Wait a minute? What happened?
 
-You just post a zanryu request to ZaaS server, which is actually also running on CPU (no external traffic, it's secure!). The server will handle all the dirty jobs for you and finally print out all the zanryu card at around 1:00 am!
+You just post a zanryu request to ZaaS server, which is actually also running on CPU (no external traffic, it's secure!). The server will handle all the dirty jobs for you and finally print out zanryu cards at around 1:00 am!
 
 By default, `zanryu` command will search for a `.zanryu.json` file in your `$HOME`, which should look like this:
 
@@ -33,13 +33,13 @@ By default, `zanryu` command will search for a `.zanryu.json` file in your `$HOM
 }
 ```
 
-so just simply create your own `.zanryu.json` in your `$HOME`, or you can also specify which file you would like to use if you prefer.
+so just simply modify your own `.zanryu.json` in your `$HOME`, or you can also specify a config file you would like to use if you prefer.
 
 ```
 zanryu new_zanryu.json
 ```
 
-run`zanryu --help`for more information.
+run `zanryu --help` for more information.
 
 ## Installation
 This repo contains both ZaaS client and server.
@@ -49,11 +49,12 @@ This repo contains both ZaaS client and server.
 ```
 git clone https://github.com/kakugirai/ZaaS.git
 cd ZaaS/ZaaS-client
-python setup.py install
+chmod +x install.sh
+./install.sh
 ```
 
 ### Install ZaaS server
-Please note that I've already deployed a ZaaS server on CPU, so run it on your own machine if you want to have a try!
+Please note that I've already deployed a ZaaS server on CPU, so run it on your own machine if you want to test it!
 
 First, install the PDF generator
 
