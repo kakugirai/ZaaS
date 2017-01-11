@@ -6,8 +6,8 @@
 By using ZaaS, the only thing you need to do when you want to 残留 in Delta is to:
 
 ```
-ssh cpu
-zanryu
+$ ssh cpu
+$ zanryu
 ```
 
 That's all!
@@ -36,7 +36,7 @@ By default, `zanryu` command will search for a `.zanryu.json` file in your `$HOM
 so just simply modify your own `.zanryu.json` in your `$HOME`, or you can also specify a config file you would like to use if you prefer.
 
 ```
-zanryu new_zanryu.json
+$ zanryu new_zanryu.json
 ```
 
 run `zanryu --help` for more information.
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 start the server
 
 ```
-python app.py
+$ python app.py
 ```
 
 ## TODOs

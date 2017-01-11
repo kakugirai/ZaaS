@@ -22,9 +22,6 @@ def api_message():
         # Wirte json file
         with open(os.path.join("json", dir_today, data["login_name"] + ".json"), "w+") as json_file:
             json_file.write(json.dumps(data_without_login_name))
-            # Write html file
-            with open(os.path.join("html", dir_today, data["login_name"] + ".html"), "w+") as config:
-                html_file.write(fill_html(json_file))
         # print data["login_name"] + ".json created"
         return data["login_name"] + ".json created"
     else:

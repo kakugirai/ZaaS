@@ -10,6 +10,7 @@ import click
 
 URL = "http://127.0.0.1:5000/zanryu"
 
+
 @click.command()
 @click.argument('config', default=os.path.join(os.path.expanduser('~'), '.zanryu.json'))
 def cli(config):
@@ -25,4 +26,3 @@ def cli(config):
     data["weekday"] = weekdays[i.weekday()]
     r = requests.post(URL, json=data)
     return
-
